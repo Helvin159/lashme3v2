@@ -3,11 +3,15 @@ import React from 'react';
 const PopularTreatmentsCard = ({ treatment }) => {
 	const { one, two, three } = treatment;
 	return (
-		<div className='flex'>
-			<div className='flex pr-1'>
-				<img src={one} alt='' />
+		<div className='flex mb-2 px-4 tablet:mb-0 tablet:px-0'>
+			<div className='flex pr-0 tablet:pr-1'>
+				<img
+					src={one}
+					alt=''
+					className='object-cover object-center w-full rounded-xl'
+				/>
 			</div>
-			<div className='flex flex-col p-0 justify-between align-baseline  px-2'>
+			<div className='flex flex-col p-0 justify-between align-baseline pl-1 tablet:pr-2'>
 				<div className='h-3/6'>
 					<img
 						src={two}

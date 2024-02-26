@@ -2,6 +2,12 @@
 module.exports = {
 	content: ['./src/**/*.{html,js}'],
 	theme: {
+		screens: {
+			mobile: '575.5px',
+			tablet: '768px',
+			laptop: '992px',
+			desktop: '1250px',
+		},
 		colors: {
 			'variant-one': '#ea2178',
 			'variant-one-light': '#f2cddd',

@@ -22,12 +22,12 @@ const PopularTreatments = () => {
 		},
 	];
 	return (
-		<section className='py-10 mx-auto max-w-1250'>
-			<div className='container'>
-				<h2 className='text-xl py-4'>Popular Treatments</h2>
+		<section className='container max-w-1250 py-10 px-5 tablet:px-0 mx-auto'>
+			<div className='container mx-auto py-4 px-5 tablet:px-0'>
+				<h2 className='text-xl '>Popular Treatments</h2>
 			</div>
-			<div className='container'>
-				<div className='flex flex-row justify-evenly'>
+			<div className='container mx-auto'>
+				<div className='flex flex-col tablet:flex-row justify-evenly mx-auto'>
 					{tempPopTreats.map((i, k) => {
 						return <PopularTreatmentsCard treatment={i} key={k} />;
 					})}
