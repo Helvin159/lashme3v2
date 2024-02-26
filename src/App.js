@@ -1,8 +1,12 @@
+import { Route, Routes } from 'react-router-dom';
+import Outlet from './routes/Outlet';
+import Home from './routes/Home';
+
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'>Hello world</header>
-		</div>
+		<Routes path='/' element={<Outlet />}>
+			<Route index element={<Home />} />
+		</Routes>
 	);
 }
 
