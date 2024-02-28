@@ -2,7 +2,7 @@ import React from 'react';
 
 const BookingWidget = () => {
 	return (
-		<div className='container w-3/4 bg-light-gray rounded-3xl translate-y-n50 py-8 px-0 mx-auto my-0'>
+		<div className='container w-3/4 bg-light-gray rounded-3xl translate-y-n50 py-8 px-0 mx-auto my-0 hidden tablet:block'>
 			<div className='container flex flex-row justify-evenly items-center mx-auto'>
 				<div>
 					<h4>Service</h4>
