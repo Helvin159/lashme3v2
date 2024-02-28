@@ -3,3 +3,6 @@
   --variant-one-light: #f2cddd;
   --variant-two: #121212;
   --variant-two-light: rgba(224, 224, 224, 0.58); }
+
+* {
+  box-sizing: border-box; }

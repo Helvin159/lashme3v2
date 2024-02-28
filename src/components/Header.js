@@ -4,11 +4,11 @@ import Button from './Button';
 
 const Header = () => {
 	return (
-		<header className='w-100 px-5'>
+		<header className='w-full px-5'>
 			<div className='flex flex-col tablet:flex-row justify-between py-7 px-14'>
 				<div className='flex mx-auto tablet:mx-0'>
-					<div className='mr-14 text-2xl'>Logo</div>
-					<div>
+					<div className='mx-auto text-2xl tablet:mr-14 '>Logo</div>
+					<div className='hidden tablet:block tablet:flex'>
 						<ul className='p-0 py-1.5 list-none'>
 							<li className='inline-block mr-8'>
 								<Link>Home</Link>

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Outlet as Layout } from 'react-router';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Outlet = () => {
 	return (
@@ -9,6 +10,7 @@ const Outlet = () => {
 			<main>
 				<Layout />
 			</main>
+			<Footer />
 		</Fragment>
 	);
 };

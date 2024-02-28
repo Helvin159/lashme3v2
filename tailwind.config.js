@@ -15,6 +15,7 @@ module.exports = {
 			'variant-two-light': 'rgba(224, 224, 224, 0.58)',
 			white: '#ffffff',
 			black: '#000000',
+			'light-gray': '#f0f0f0',
 			'rgba-white-0.4': 'rgba(255,255,255,.4)',
 		},
 		extend: {
