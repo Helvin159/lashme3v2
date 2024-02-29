@@ -13,6 +13,7 @@ function App() {
 		<Routes>
 			<Route path='/' element={<Outlet />}>
 				<Route index element={<Home />} />
+				<Route path='/book' element={<Home />} />
 			</Route>
 		</Routes>
 	);

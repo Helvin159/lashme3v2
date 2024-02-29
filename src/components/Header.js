@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
+import { MenuContext } from '../context/MenuContext';
+
+import menuBtn from '../assets/svg/icon-menu.svg';
 
 const Header = () => {
+	const { isOpen, setIsOpen } = useContext(MenuContext);
+
+	const handleMobileNav = () => {
+		setIsOpen(!isOpen);
+		document.body.style.overflow = 'hidden';
+	};
+
 	return (
-		<header className='w-100 px-5'>
-			<div className='flex flex-row justify-between py-7 px-14'>
-				<div className='flex'>
-					<div className='mr-14 text-2xl'>Logo</div>
-					<div>
+		<header className='relative w-full px-5'>
+			<div className='flex flex-col tablet:flex-row justify-between py-7 px-14'>
+				<div className='flex mx-auto tablet:mx-0'>
+					<div className='mx-auto text-2xl tablet:mr-14 '>Logo</div>
+					<div className='hidden tablet:block tablet:flex'>
 						<ul className='p-0 py-1.5 list-none'>
 							<li className='inline-block mr-8'>
 								<Link>Home</Link>
@@ -16,16 +26,21 @@ const Header = () => {
 							<li className='inline-block mr-8'>
 								<Link>Book</Link>
 							</li>
-							<li className='inline-block'>
+							<li className='inline-block mr-8'>
 								<Link>Calendar</Link>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div className='flex'>
+				<div className='hidden tablet:flex'>
 					<Button variant={'light'}>Book Now</Button>
 					<Button variant={'pink'}>Login</Button>
 				</div>
+			</div>
+			<div className='absolute right-6 top-6 tablet:hidden'>
+				<button onClick={handleMobileNav}>
+					<img src={menuBtn} width={'40px'} alt='Menu button' />
+				</button>
 			</div>
 		</header>
 	);
