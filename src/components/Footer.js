@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
-		<footer className='w-full'>
+		<footer className='w-full px-5'>
 			<div className='container flex flex-col tablet:flex-row basis-1/2 justify-between mx-auto py-8'>
 				<div className='flex flex-col justify-between'>
 					<div className='container'>
@@ -22,16 +22,24 @@ const Footer = () => {
 					</div>
 					<ul className='px-0 py-1.5 list-none'>
 						<li>
-							<Link to={'/'}>Book an</Link>
+							<Link to={'/'} className='whitespace-nowrap'>
+								Book a Session
+							</Link>
 						</li>
 						<li>
-							<Link to={'/'}>Contact Us</Link>
+							<Link to={'/'} className='whitespace-nowrap'>
+								Contact Us
+							</Link>
 						</li>
 						<li>
-							<Link to={'/'}>How-to Guides</Link>
+							<Link to={'/'} className='whitespace-nowrap'>
+								How-to Guides
+							</Link>
 						</li>
 						<li>
-							<Link to={'/'}>Find a store</Link>
+							<Link to={'/'} className='whitespace-nowrap'>
+								Find a store
+							</Link>
 						</li>
 					</ul>
 				</div>

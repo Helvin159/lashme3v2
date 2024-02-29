@@ -12,7 +12,7 @@ const HomeHero = () => {
 					alt='hero'
 				/>
 			</div>
-			<div className='bg-rgba-white-0.4 backdrop-blur-sm h-full absolute top-0 left-0 right-0 bottom-0 m-0'>
+			<div className='bg-rgba-white-0.6 backdrop-blur-sm h-full absolute top-0 left-0 right-0 bottom-0 m-0'>
 				<div className='absolute w-full tablet:w-6/12 left-1/2 top-1/2 translate-y-n50 translate-x-n50 text-center '>
 					<h1 className='text-xl tablet:text-3xl'>
 						Enhance your natural beauty with Lash Me E.

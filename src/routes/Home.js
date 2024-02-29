@@ -16,6 +16,7 @@ import imgThree from '../assets/png/image-3.png';
 import imgFour from '../assets/png/image-4.png';
 import imgFive from '../assets/png/image-5.png';
 import imgSix from '../assets/png/image-6.png';
+import StopSignUpCTA from '../components/StopSignUpCTA';
 
 const Home = () => {
 	const mockData = [
@@ -74,8 +75,9 @@ const Home = () => {
 		<>
 			<HomeHero />
 			<BookingWidget />
-			<PopularTreatments popularTreatments={tempPopTreats} />
+			<PopularTreatments className='pt-0' popularTreatments={tempPopTreats} />
 			<RecommendedProducts products={mockData} />
+			<StopSignUpCTA />
 		</>
 	);
 };

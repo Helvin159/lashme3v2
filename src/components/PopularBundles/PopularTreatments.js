@@ -1,9 +1,10 @@
 import React from 'react';
 import PopularTreatmentsCard from './components/PopularTreatmentsCard';
+import Section from '../Section';
 
 const PopularTreatments = ({ popularTreatments }) => {
 	return (
-		<section className='max-w-1250 mx-auto py-5 px-5 tablet:px-0 '>
+		<Section>
 			<div className='container mx-auto py-4 px-5 tablet:px-0'>
 				<h2 className='text-xl'>Popular Treatments</h2>
 			</div>
@@ -12,7 +13,7 @@ const PopularTreatments = ({ popularTreatments }) => {
 					return <PopularTreatmentsCard treatment={i} key={k} />;
 				})}
 			</div>
-		</section>
+		</Section>
 	);
 };
 
